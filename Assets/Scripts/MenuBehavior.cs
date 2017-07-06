@@ -1,16 +1,20 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using UnityEngine.SceneManagement;
 using UnityEngine;
 
-public class MenuBehavior : MonoBehaviour {
-
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+public class MenuBehavior : MonoBehaviour
+{
+    public void triggerGame(int trig)
+    {
+        switch (trig)
+        {
+            case (0):
+                SceneManager.LoadScene("GameDescription");
+                break;
+            case (1):
+                Application.Quit(); 
+                break;
+            default:
+                break;
+        }
+    }
 }
