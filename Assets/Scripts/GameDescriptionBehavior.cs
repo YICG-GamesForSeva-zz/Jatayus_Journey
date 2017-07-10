@@ -9,7 +9,7 @@ public class GameDescriptionBehavior : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        Debug.Log("Hit!"); 
+        
     }
 
     public void progressTrigger(int ind)
