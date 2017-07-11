@@ -71,8 +71,7 @@ public class JatayuController : MonoBehaviour
             // Setting the scrolling to stop
             GameController.instance.birdLanded = true;
         }
-
-        if (other.gameObject.tag == "Sword")
+        else
         {
             // Zero out Jatayu's velocity
             jatayuRb2d.velocity = Vector2.zero;
@@ -90,22 +89,27 @@ public class JatayuController : MonoBehaviour
 
     void LateUpdate()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (GameController.instance.birdLanded)
         {
-            // Letting the game controller know that Jatayu is flying
-           GameController.instance.birdLanded = false;
+            GameController.instance.scrollSpeed = 0.0f;
 
-            // Tell the animator to change states -Flap
-            anim.SetTrigger("Flap");
+            if (Input.GetMouseButtonDown(0))
+            {
+                // Letting the game controller know that Jatayu is flying
+                GameController.instance.birdLanded = false;
 
-            // Zero out Jatayu's vertical velocity (in the Y-axis)
-            jatayuRb2d.velocity = Vector2.zero;
+                // Tell the animator to change states -Flap
+                anim.SetTrigger("Flap");
 
-            // Provide Jatayu with some lift!
-           jatayuRb2d.AddForce(new Vector2(0, upForce));
+                // Zero out Jatayu's vertical velocity (in the Y-axis)
+                jatayuRb2d.velocity = Vector2.zero;
 
-            // Resuming the scrolling
-            GameController.instance.scrollSpeed = -1.5f;
+                // Provide Jatayu with some lift!
+                jatayuRb2d.AddForce(new Vector2(0, upForce));
+
+                // Resuming the scrolling
+                GameController.instance.scrollSpeed = -1.5f;
+            }
         }
     }
 }

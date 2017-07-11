@@ -37,7 +37,7 @@ public class ScrollingObject : MonoBehaviour
     void Update()
     {
         // If the game is over, stop the scrolling
-        if (GameController.instance.gameOver == true || GameController.instance.birdLanded == true)
+        if (GameController.instance.gameOver == true)
         {
             rb2d.velocity = Vector2.zero;
         }
