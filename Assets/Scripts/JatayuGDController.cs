@@ -1,4 +1,20 @@
-﻿using System.Collections;
+﻿/*
+ * Young Indian Culture Group Inc. 5013(c)
+ * 
+ * Copyright (c) 2017
+ * 
+ * Author       :   Pranav S. Krishnamurthy
+ * 
+ * Project      :   Jatayu's Journey
+ * 
+ * File Name    :   JatayuGDController.cs
+ * 
+ * Date Created :   7th July 2017
+ * 
+ * Purpose      :   Animating Jatayu with the intention of having him speak to the player
+ */
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

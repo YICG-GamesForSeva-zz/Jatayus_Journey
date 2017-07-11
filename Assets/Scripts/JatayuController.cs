@@ -10,6 +10,11 @@
  * File Name    :   JatayuController.cs
  * 
  * Date Created :   11th July 2017
+ * 
+ * Purpose      :   To determine the logic for our character Jatayu - who can do the following:
+ *                  - Flap wings
+ *                  - Land (if the player gets tired)
+ *                  - Die (if he hits the sword)
  */
 
 using UnityEngine;
@@ -63,18 +68,8 @@ public class JatayuController : MonoBehaviour
             // Zero out Jatayu's velocity vertically (in the Y-axis)
             jatayuRb2d.velocity = Vector2.zero;
 
-            // Now checking for the click, to send Jatayu back up
-            if (Input.GetMouseButtonDown(0))
-            {
-                // Tell the animator to change states - Flap
-                anim.SetTrigger("Flap");
-
-                // Zero out Jatayu's vertical velocity (in the Y-axis)
-                jatayuRb2d.velocity = Vector2.zero;
-
-                // Provide Jatayu with some lift!
-                jatayuRb2d.AddForce(new Vector2(0, upForce));
-            }
+            // Setting the scrolling to stop
+            GameController.instance.birdLanded = true;
         }
 
         if (other.gameObject.tag == "Sword")
@@ -89,7 +84,28 @@ public class JatayuController : MonoBehaviour
             anim.SetTrigger("Die");
 
             //...and tell the GameController about it (this will be written but commented)
-            // GameController.instance.BirdDied();
+            GameController.instance.BirdDied();
+        }
+    }
+
+    void LateUpdate()
+    {
+        if (Input.GetMouseButtonDown(0))
+        {
+            // Letting the game controller know that Jatayu is flying
+           GameController.instance.birdLanded = false;
+
+            // Tell the animator to change states -Flap
+            anim.SetTrigger("Flap");
+
+            // Zero out Jatayu's vertical velocity (in the Y-axis)
+            jatayuRb2d.velocity = Vector2.zero;
+
+            // Provide Jatayu with some lift!
+           jatayuRb2d.AddForce(new Vector2(0, upForce));
+
+            // Resuming the scrolling
+            GameController.instance.scrollSpeed = -1.5f;
         }
     }
 }

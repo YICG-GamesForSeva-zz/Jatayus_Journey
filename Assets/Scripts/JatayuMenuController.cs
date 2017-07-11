@@ -1,4 +1,20 @@
-﻿using System.Collections;
+﻿/*
+ * Young Indian Culture Group Inc. 5013(c)
+ * 
+ * Copyright (c) 2017
+ * 
+ * Author       :   Pranav S. Krishnamurthy
+ * 
+ * Project      :   Jatayu's Journey
+ * 
+ * File Name    :   JatayuMenuController.cs
+ * 
+ * Date Created :   6th July 2017
+ * 
+ * Purpose      :   To be able to animate Jatayu from the onset of the game
+ */
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
