@@ -7,18 +7,21 @@
  * 
  * Project      :   Jatayu's Journey
  * 
- * File Name    :   Ravana.cs
+ * File Name    :   Sword.cs
  * 
- * Date Created :   11th July 2017
+ * Date Created :   12th July 2017
  * 
- * Purpose      :   This script will be outlining the logic for the columns (or for Ravana and his swords).
+ * Purpose      :   This script will be outlining the logic for the columns (or for Ravana and his swords, or just 
+ *                  Ravana's swords).
+ * 
+ * Changed on 12th July 2017 - Renamed Ravana.cs to Sword.cs
  */
 
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Ravana : MonoBehaviour
+public class Sword : MonoBehaviour
 {
     void OnTriggerEnter2D(Collider2D other)
     {

@@ -19,10 +19,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class RavanaPool : MonoBehaviour
+public class SwordPool : MonoBehaviour
 {
-    public GameObject ravanaPrefab;
-    public int ravansPoolSize = 5;
+    public GameObject swordPrefab;
+    public int swordPoolSize = 5;
     public float spawnRate = 3f;
     public float columnMin = -1f;
     public float columnMax = 3.5f;
@@ -30,7 +30,7 @@ public class RavanaPool : MonoBehaviour
     private GameObject[] columns;
     private int currentColumn = 0;
 
-    private Vector2 ravanaPoolPosition = new Vector2(-15, -25);
+    private Vector2 swordPoolPosition = new Vector2(-15, -25);
     private float spawnXPosition = 10f;
 
     private float timeSinceLastSpawned;
@@ -40,12 +40,12 @@ public class RavanaPool : MonoBehaviour
         timeSinceLastSpawned = 0f;
 
         //Initialize the columns collection
-        columns = new GameObject[ravansPoolSize];
+        columns = new GameObject[swordPoolSize];
 
         // Loop through the collection
-        for (int i = 0; i < ravansPoolSize; i++)
+        for (int i = 0; i < swordPoolSize; i++)
         {
-            columns[i] = (GameObject)Instantiate(ravanaPrefab, ravanaPoolPosition, Quaternion.identity);
+            columns[i] = (GameObject)Instantiate(swordPrefab, swordPoolPosition, Quaternion.identity);
         }
     }
 
@@ -68,7 +68,7 @@ public class RavanaPool : MonoBehaviour
             // too big, reset it back to zero.
             currentColumn++;
 
-            if (currentColumn >= ravansPoolSize)
+            if (currentColumn >= swordPoolSize)
             {
                 currentColumn = 0;
             }
