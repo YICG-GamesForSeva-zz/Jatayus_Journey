@@ -405,11 +405,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9881d62dc3c01e74da710d471b4eadc0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ravanaPrefab: {fileID: 1314846483161800, guid: 333e22820dc28d243a053f3962e4cb25,
+  ravanaPrefab: {fileID: 1418883108676220, guid: 333e22820dc28d243a053f3962e4cb25,
     type: 2}
   ravansPoolSize: 5
   spawnRate: 3
-  columnMin: 0
+  columnMin: -4
   columnMax: 3.5
 --- !u!1 &565973778
 GameObject:
