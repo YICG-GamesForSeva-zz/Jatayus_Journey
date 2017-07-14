@@ -8,7 +8,7 @@ This game is part of the Games For Seva, and has completed P1 development.
 1. Aayush Bagul - Lead Developer, Games For Seva
 
 # Content Creators
-1. Vishy Karruvakat - Lead Asset Creator
+1. Vishy Karuvakkat - Lead Asset Creator
 2. Vignesh Ramachandran - Co-Lead Asset Creator
 
 # Story of Jatayu's Journey
