@@ -59,8 +59,8 @@ PlayerSettings:
   iosAllowHTTPDownload: 1
   allowedAutorotateToPortrait: 1
   allowedAutorotateToPortraitUpsideDown: 1
-  allowedAutorotateToLandscapeRight: 1
-  allowedAutorotateToLandscapeLeft: 1
+  allowedAutorotateToLandscapeRight: 0
+  allowedAutorotateToLandscapeLeft: 0
   useOSAutorotation: 1
   use32BitDisplayBuffer: 1
   disableDepthAndStencilBuffers: 0
@@ -503,14 +503,14 @@ PlayerSettings:
   m_MobileRenderingPath: 1
   metroPackageName: Jatayus_Journey
   metroPackageVersion: 
-  metroCertificatePath: D:\GFS\Jatayus_Journey\Assets\WSATestCertificate.pfx
+  metroCertificatePath: Assets\WSATestCertificate.pfx
   metroCertificatePassword: 
   metroCertificateSubject: Games 4 Seva
   metroCertificateIssuer: Games 4 Seva
   metroCertificateNotAfter: 80ea9949501dd401
   metroApplicationDescription: Jatayus_Journey
   wsaImages: {}
-  metroTileShortName: 
+  metroTileShortName: Jatayus Journey
   metroCommandLineArgsFile: 
   metroTileShowName: 0
   metroMediumTileShowName: 0

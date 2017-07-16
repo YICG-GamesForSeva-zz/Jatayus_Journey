@@ -30,7 +30,7 @@ public class SwordPool : MonoBehaviour
     private GameObject[] columns;
     private int currentColumn = 0;
 
-    private Vector2 swordPoolPosition = new Vector2(-25, -25);
+    private Vector2 swordPoolPosition = new Vector2(-15, -25);
     private float spawnXPosition = 10f;
 
     private float timeSinceLastSpawned;
