@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: a7f27e22271d38c4bbca2128c183ac43
+timeCreated: 1500219599
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Flux Architect
+  fontNames:
+  - Flux Architect
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
