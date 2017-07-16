@@ -503,11 +503,11 @@ PlayerSettings:
   m_MobileRenderingPath: 1
   metroPackageName: Jatayus_Journey
   metroPackageVersion: 
-  metroCertificatePath: 
+  metroCertificatePath: D:\GFS\Jatayus_Journey\Assets\WSATestCertificate.pfx
   metroCertificatePassword: 
-  metroCertificateSubject: 
-  metroCertificateIssuer: 
-  metroCertificateNotAfter: 0000000000000000
+  metroCertificateSubject: Games 4 Seva
+  metroCertificateIssuer: Games 4 Seva
+  metroCertificateNotAfter: 80ea9949501dd401
   metroApplicationDescription: Jatayus_Journey
   wsaImages: {}
   metroTileShortName: 
