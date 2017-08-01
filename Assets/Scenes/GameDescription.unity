@@ -406,7 +406,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 607088299}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4, y: 2.5, z: 0}
+  m_LocalPosition: {x: -2.2, y: 2.5, z: 0}
   m_LocalScale: {x: 1.75, y: 1.75, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -473,7 +473,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -80, y: 80}
+  m_AnchoredPosition: {x: -50, y: 140}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1083629855
@@ -497,7 +497,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: ca632256a38abe64a91b416d4fe47f17, type: 3}
-    m_FontSize: 20
+    m_FontSize: 32
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -508,10 +508,10 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "Namaste Friend! I must save Lady Sita from the tight\ninhuman grip of Lord
-    Ravana, King of Lanka! \nThey are on their way to Lanka as I speak. \n\nTap on
-    the screen to move me up. \nIf I hit one of Ravana's swords, I die! 4Tap on FLY!
-    to help me!"
+  m_Text: "Namaste Friend! I must \nsave Lady Sita from \nthe tight inhuman \ngrip
+    of Lord Ravana, \nKing of Lanka! They are \non their way to Lanka \nas I speak.
+    \n\nTap on the screen to \nmove me up. If I hit one \nof Ravana's swords, \nI
+    die! \nTap fly to help me!"
 --- !u!222 &1083629856
 CanvasRenderer:
   m_ObjectHideFlags: 0
