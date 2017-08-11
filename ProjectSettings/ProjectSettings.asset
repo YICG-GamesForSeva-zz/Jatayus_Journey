@@ -151,7 +151,7 @@ PlayerSettings:
   CreateWallpaper: 0
   APKExpansionFiles: 0
   keepLoadedShadersAlive: 0
-  StripUnusedMeshComponents: 0
+  StripUnusedMeshComponents: 1
   VertexChannelCompressionMask:
     serializedVersion: 2
     m_Bits: 238
@@ -481,14 +481,14 @@ PlayerSettings:
   splashScreenBackgroundSourceLandscape: {fileID: 0}
   splashScreenBackgroundSourcePortrait: {fileID: 0}
   spritePackerPolicy: 
-  webGLMemorySize: 256
-  webGLExceptionSupport: 1
+  webGLMemorySize: 103
+  webGLExceptionSupport: 2
   webGLNameFilesAsHashes: 0
   webGLDataCaching: 0
   webGLDebugSymbols: 0
   webGLEmscriptenArgs: 
   webGLModulesDirectory: 
-  webGLTemplate: APPLICATION:Default
+  webGLTemplate: APPLICATION:Minimal
   webGLAnalyzeBuildSize: 0
   webGLUseEmbeddedResources: 0
   webGLUseWasm: 0
@@ -498,11 +498,12 @@ PlayerSettings:
   scriptingBackend: {}
   incrementalIl2cppBuild: {}
   additionalIl2CppArgs: 
-  apiCompatibilityLevelPerPlatform: {}
+  apiCompatibilityLevelPerPlatform:
+    WebGL: 1
   m_RenderingPath: 1
   m_MobileRenderingPath: 1
-  metroPackageName: Jatayus_Journey
-  metroPackageVersion: 
+  metroPackageName: JatayusJourney
+  metroPackageVersion: 1.0.0.0
   metroCertificatePath: 
   metroCertificatePassword: 
   metroCertificateSubject: 
@@ -522,7 +523,33 @@ PlayerSettings:
   metroSplashScreenBackgroundColor: {r: 0.12941177, g: 0.17254902, b: 0.21568628,
     a: 1}
   metroSplashScreenUseBackgroundColor: 0
-  platformCapabilities: {}
+  platformCapabilities:
+    WindowsStoreApps:
+      AllJoyn: False
+      BlockedChatMessages: False
+      Bluetooth: False
+      Chat: False
+      CodeGeneration: False
+      EnterpriseAuthentication: False
+      HumanInterfaceDevice: False
+      InputInjectionBrokered: False
+      InternetClient: False
+      InternetClientServer: False
+      Location: False
+      Microphone: False
+      MusicLibrary: False
+      Objects3D: False
+      PhoneCall: False
+      PicturesLibrary: False
+      PrivateNetworkClientServer: False
+      Proximity: False
+      RemovableStorage: False
+      SharedUserCertificates: False
+      SpatialPerception: False
+      UserAccountInformation: False
+      VideosLibrary: False
+      VoipCall: False
+      WebCam: False
   metroFTAName: 
   metroFTAFileTypes: []
   metroProtocolName: 
